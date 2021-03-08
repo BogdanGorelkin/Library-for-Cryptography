@@ -57,4 +57,6 @@ It performs the same operation: bit by bit exclusive OR between the cryptogram a
       = 0010010100011110011111110
 ```
 
+We fall back, as we can see, on the original message. In fact, as this is the modulo 2 addition, and that we added twice our sequence of noise bits, we added either 0 or 2, the whole modulo 2: so we obviously go back to the original sequence.
+
 
