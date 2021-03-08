@@ -14,15 +14,15 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 
 ###  The different stages of the constitution of the library:
 
-1. A first symmetrical encryption algorithm
-2. Constitution of a random generator
-3. How to efficiently calculate a power
-4. Generation of prime numbers
-5. Asymmetric encryption algorithms:
-> 5.1. RSA</br>
-> 5.2. El Gamal
+1. <sup id="a1">A first symmetrical encryption algorithm(#f1)</sup>
+2. <sup id="a2">Constitution of a random generator(#f2)</sup>
+3. <sup id="a3">How to efficiently calculate a power(#f3)</sup>
+4. <sup id="a4">Generation of prime numbers(#f4)</sup>
+5. <sup id="a5">Asymmetric encryption algorithms:(#f5)</sup>
+> 5.1. <sup id="a6">RSA</br>(#f6)</sup>
+> 5.2. <sup id="a7">El Gamal(#f7)</sup>
 
-###  1. A Symmetrical Encryption Algorithm for the IoT
+###  1. <b id="f1">A Symmetrical Encryption Algorithm for the IoT</b> [↩](#a1)
 Suppose you want to encrypt a message you have in the form of a sequence of bits:
 
 ```0010010100011110011111110```
@@ -59,11 +59,10 @@ It performs the same operation: bit by bit exclusive OR between the cryptogram a
 
 We fall back, as we can see, on the original message. In fact, as this is the modulo 2 addition, and that we added twice our sequence of noise bits, we added either 0 or 2, the whole modulo 2: so we obviously go back to the original sequence.
 
-### Constitution of Random Generators
+### 2. <b id="f2">Constitution of Random Generators</b> [↩](#a2)
 Random and pseudo-random number generators are one of the foundations of computer security.
 
-The first ones are based on hardware:
-</br>
+The first ones are based on hardware:</br>
 * They use a physical source of entropy, using the sensors of the device: kth decimal place of the processor temperature, background noise picked up by the microphone, pressure, values picked up by the accelerometer, etc.
 * These can be mixed with the memory residue, possibly with the user's action
 * Based on a physical noise, it is a "true" random variable, but not provable: for example, we cannot prove that the random variable corresponding to this physical generation follows a normal law.
@@ -71,8 +70,7 @@ The first ones are based on hardware:
 * In cryptography, such generators are necessary to generate keys for cryptosystems.
 * With pyboard, we have access to such a generator: pyb.rng().
 
-The second are based on algorithms:
-</br>
+The second are based on algorithms:</br>
 * Most of the time, the starting point is a modulo N recurrent sequence.
 * The sequence is chosen so that the numbers produced during the iterations look a lot like random numbers.
 * By "resemble", we mean for example: no statistical test should be able to distinguish between a truly random sequence and a sequence produced by this algorithm.
