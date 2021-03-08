@@ -22,4 +22,4 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 > 5.1. RSA</br>
 > 5.2. El Gamal
 
-##  1. A Symmetrical Encryption Algorithm for the IoT
+###  1. A Symmetrical Encryption Algorithm for the IoT
