@@ -32,7 +32,7 @@ and that one has moreover a pseudo-random number generator at disposal. We will 
 ```1011000101110010001110100```
 </br>
 We can hide our message in this noise by the technique known as the "one-time pad", where the cryptogram is the bit-by-bit exclusive OR (or, in an equivalent way, the modulo 2 addition) between the original message and this random sequence:
-</br>```       
+```       
        0010010100011110011111110
    XOR 1011000101110010001110100
      = 1001010001101100010001010```
