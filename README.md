@@ -12,7 +12,7 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 
 ---
 
-##  The different stages of the constitution of the library :
+##  The different stages of the constitution of the library:
 
 1. A first symmetrical encryption algorithm
 2. Constitution of a random generator
@@ -21,3 +21,5 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 5. Asymmetric encryption algorithms:
 > 5.1. RSA</br>
 > 5.2. El Gamal
+
+##  1. A Symmetrical Encryption Algorithm for the IoT
