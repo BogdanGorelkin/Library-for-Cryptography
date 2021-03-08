@@ -41,17 +41,23 @@ We can hide our message in this noise by the technique known as the "one-time pa
 </br>
 Our cryptogram is therefore:
 </br>
+
 ```1001010001101100010001010```
+
 </br>
 Alice sends this message to Bob who, it is assumed, is capable of generating exactly the same noise:
 </br>
+
 ```1011000101110010001110100```
+
 </br>
 It performs the same operation: bit by bit exclusive OR between the cryptogram and this noise:
 </br>
+
 ``` 
         1001010001101100010001010
     XOR 1011000101110010001110100
       = 0010010100011110011111110
 ```
+
 </br>
