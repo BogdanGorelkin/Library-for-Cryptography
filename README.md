@@ -24,31 +24,31 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 
 ###  1. A Symmetrical Encryption Algorithm for the IoT
 Suppose you want to encrypt a message you have in the form of a sequence of bits:
-</br>
+
 ```0010010100011110011111110```
-</br>
+
 and that one has moreover a pseudo-random number generator at disposal. We will generate as many random bits as there are in the message to be encrypted:
-</br>
+
 ```1011000101110010001110100```
-</br>
+
 We can hide our message in this noise by the technique known as the "one-time pad", where the cryptogram is the bit-by-bit exclusive OR (or, in an equivalent way, the modulo 2 addition) between the original message and this random sequence:
-</br>
+
 ```       
        0010010100011110011111110
    XOR 1011000101110010001110100
      = 1001010001101100010001010
 ```
-</br>
+
 Our cryptogram is therefore:
 
 ```1001010001101100010001010```
 
-</br>
+
 Alice sends this message to Bob who, it is assumed, is capable of generating exactly the same noise:
 
 ```1011000101110010001110100```
 
-</br>
+
 It performs the same operation: bit by bit exclusive OR between the cryptogram and this noise:
 
 ``` 
@@ -57,4 +57,4 @@ It performs the same operation: bit by bit exclusive OR between the cryptogram a
       = 0010010100011110011111110
 ```
 
-</br>
+
