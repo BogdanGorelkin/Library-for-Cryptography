@@ -64,17 +64,17 @@ Random and pseudo-random number generators are one of the foundations of compute
 
 The first ones are based on hardware:
 </br>
-*They use a physical source of entropy, using the sensors of the device: kth decimal place of the processor temperature, background noise picked up by the microphone, pressure, values picked up by the accelerometer, etc.
-*These can be mixed with the memory residue, possibly with the user's action
-*Based on a physical noise, it is a "true" random variable, but not provable: for example, we cannot prove that the random variable corresponding to this physical generation follows a normal law.
-*This random is not reproducible.
-*In cryptography, such generators are necessary to generate keys for cryptosystems.
-*With pyboard, we have access to such a generator: pyb.rng().
+* They use a physical source of entropy, using the sensors of the device: kth decimal place of the processor temperature, background noise picked up by the microphone, pressure, values picked up by the accelerometer, etc.
+* These can be mixed with the memory residue, possibly with the user's action
+* Based on a physical noise, it is a "true" random variable, but not provable: for example, we cannot prove that the random variable corresponding to this physical generation follows a normal law.
+* This random is not reproducible.
+* In cryptography, such generators are necessary to generate keys for cryptosystems.
+* With pyboard, we have access to such a generator: pyb.rng().
 
 The second are based on algorithms:
 </br>
-*Most of the time, the starting point is a modulo N recurrent sequence.
-*The sequence is chosen so that the numbers produced during the iterations look a lot like random numbers.
-*By "resemble", we mean for example: no statistical test should be able to distinguish between a truly random sequence and a sequence produced by this algorithm.
-*The first term of the sequence is the seed of the pseudo-random generator. Providing the same seed twice in a row leads to generating the same pseudo-random numbers twice in a row.
-*This reproducibility is interesting in cryptography: it makes it possible to easily perform symmetrical encryption by masking in noise, as we have seen previously.
+* Most of the time, the starting point is a modulo N recurrent sequence.
+* The sequence is chosen so that the numbers produced during the iterations look a lot like random numbers.
+* By "resemble", we mean for example: no statistical test should be able to distinguish between a truly random sequence and a sequence produced by this algorithm.
+* The first term of the sequence is the seed of the pseudo-random generator. Providing the same seed twice in a row leads to generating the same pseudo-random numbers twice in a row.
+* This reproducibility is interesting in cryptography: it makes it possible to easily perform symmetrical encryption by masking in noise, as we have seen previously.
