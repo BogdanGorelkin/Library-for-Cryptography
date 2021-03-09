@@ -18,7 +18,7 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 2. [Constitution of a random generator](#2)
 3. [How to efficiently calculate a power](#3) 
 4. [Generation of prime numbers](#4)
-5. [Asymmetric encryption algorithms:](https://en.wikipedia.org/wiki/Public-key_cryptography)
+5. [Asymmetric encryption algorithms:](#5)
    1. [RSA](#5_1) </br>
    2. [El Gamal](#5_2) 
 
@@ -136,8 +136,25 @@ More precisely...
 * Start again with the following letters, until the end of the word.
 
 ### Generation of prime numbers <a name="3"></a>[↩](#menu)
+###### ERATOSTHENES' SIEVE
+To obtain a list of prime numbers below **N**, one can proceed as follows:
+* Create the list of integers from **2** to **N**,
+* Delete, in this list, the multiples of **2**, then the multiples of the next remaining number in the list **(3)**, then the multiples of the next remaining number in the list **(5)**...
+* Stop at **N/2**.
 
+######## A FERMAT THEOREM
+*Small theorem of Fermat*</br>
+If **n** is prime, then **n** divides **a<sup>n</sup>−a,a>1**.</br>
+In other words, **a<sup>n</sup>≡a[n]**.
+######## APPLICATION TO PRIMALITY TESTS
+To obtain a large prime number, the idea is to draw a large number of digits, concatenate them as a number, and then test if this number is prime.
+
+The problem with Fermat's theorem is that the implication is in the wrong direction: one would want something of the form "if such and such a property, then the number is prime", as for example in Wilson's theorem. However :
+* It is difficult to be more efficient than Fermat.
+* If the reciprocal is false in general, it is concretely very often true, and can be used as the basis of a probabilistic method of primality testing: something that, when it says that the number is not prime, is never wrong (a proven meaning of Fermat's theorem), and when it says that the number is prime, has a very small risk of being wrong.
 ### Diffie–Hellman key exchange <a name="4"></a>[↩](#menu)
 ### Asymmetric encryption algorithms: <a name="5"></a>[↩](#menu)
 ###### RSA <a name="5_1"></a>[↩](#menu)
+Read more about RSA encryption [here](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 ###### El Gamal <a name="5_2"></a>[↩](#menu)
+Read more about El Gamal encryption [here](https://en.wikipedia.org/wiki/ElGamal_encryption)
