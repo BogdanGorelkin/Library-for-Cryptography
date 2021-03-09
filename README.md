@@ -14,15 +14,15 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 
 ###  The different stages of the constitution of the library:
 
-1. <sup id="a1">A first symmetrical encryption algorithm (#f1)</sup>
-2. <sup id="a2">Constitution of a random generator (#f2)</sup>
-3. <sup id="a3">How to efficiently calculate a power (#f3)</sup>
-4. <sup id="a4">Generation of prime numbers (#f4)</sup>
-5. <sup id="a5">Asymmetric encryption algorithms: (#f5)</sup>
-> 5.1. <sup id="a6">RSA (#f6)</sup></br>
-> 5.2. <sup id="a7">El Gamal (#f7)</sup>
+1. A first symmetrical encryption algorithm
+2. Constitution of a random generator
+3. How to efficiently calculate a power 
+4. Generation of prime numbers
+5. Asymmetric encryption algorithms:
+> 5.1. RSA
+> 5.2. El Gamal 
 
-###  1. <b id="f1">A Symmetrical Encryption Algorithm for the IoT</b> [↩](#a1)
+###  1. A Symmetrical Encryption Algorithm for the IoT
 Suppose you want to encrypt a message you have in the form of a sequence of bits:
 
 ```0010010100011110011111110```
@@ -59,7 +59,7 @@ It performs the same operation: bit by bit exclusive OR between the cryptogram a
 
 We fall back, as we can see, on the original message. In fact, as this is the modulo 2 addition, and that we added twice our sequence of noise bits, we added either 0 or 2, the whole modulo 2: so we obviously go back to the original sequence.
 
-### 2. <b id="f2">Constitution of Random Generators</b> [↩](#a2)
+### 2. Constitution of Random Generators
 Random and pseudo-random number generators are one of the foundations of computer security.
 
 The first ones are based on hardware:</br>
