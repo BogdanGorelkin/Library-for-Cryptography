@@ -97,7 +97,29 @@ These generators are obviously periodic, and some parameters produce better sequ
 This generator has been proposed recently by Marsaglia, it has basically three integer parameters `a,b,c`. Its operation can be summarized as follows:</br>
 * We start from a 32-bit vector, which serves as a seed.
 * To calculate the new term from the current term `x`:
-    * We replace x by the result of the or exclusive bit-by-bit between x and its version shifted a bits to the right (circular shift, the bits going out to the right go in to the left).
-    * Replace x with the result of the or exclusive bit-to-bit between x and its version shifted b bits to the left (circular shift).
-    * We replace x by the result of the or exclusive bit-to-bit between x and its version shifted c bits to the right (circular shift).
+    * We replace x by the result of the or exclusive bit-by-bit between x and its version shifted `a` bits to the right (circular shift, the bits going out to the right go in to the left).
+    * Replace x with the result of the or exclusive bit-to-bit between x and its version shifted `b` bits to the left (circular shift).
+    * We replace x by the result of the or exclusive bit-to-bit between x and its version shifted `c` bits to the right (circular shift).
 * The value obtained after these three operations is the new term of the sequence, to be output.
+
+A piece of code in C detailing the XORshift with (12, 25, 27) as parameters would therefore be:
+``` 
+  x ^= x >> 12; // a
+  x ^= x << 25; // b
+  x ^= x >> 27; // c
+  ``` 
+### How to efficiently calculate a power
+Fast exponentiation is a classical technique, used in practice, to obtain the power of a given number.
+
+This fast exponentiation iterates, for the calculation of **X<sup>e</sup>**, the following operations:
+* The square elevation,
+* Multiplication by **X**,
+in an order depending on the base **2** entry of **e**.
+
+
+
+### Generation of prime numbers
+### Diffie–Hellman key exchange
+### Asymmetric encryption algorithms:
+###### RSA
+###### El Gamal
