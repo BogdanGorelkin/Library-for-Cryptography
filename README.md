@@ -18,7 +18,7 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 2. [Constitution of a random generator](#2)
 3. [How to efficiently calculate a power](#3) 
 4. [Generation of prime numbers](#4)
-5. [Asymmetric encryption algorithms:](#5)
+5. [Asymmetric encryption algorithms:](https://en.wikipedia.org/wiki/Public-key_cryptography)
    1. [RSA](#5_1) </br>
    2. [El Gamal](#5_2) 
 
@@ -120,7 +120,7 @@ It is well understood in its recursive version :
 * If e is even, we calculate (recursively) **X<sup>e/2</sup>**, which we multiply by itself,
 * Otherwise, we calculate (recursively) **X<sup>e-1</sup>**, which we multiply by **X**.
 
-****** THE ALGORITHM
+###### THE ALGORITHM
 As the above technique is recursive, its implementation in a sensor may be problematic. But as the operations to be done are determined by the parity of the number following a division by **2**, or has a division by **2** after a deletion of **1**, we deduce that the binary writing of the number contains exactly the operations to be done.
 
 More precisely...
@@ -135,8 +135,8 @@ More precisely...
     * otherwise, multiply by **X**.
 * Start again with the following letters, until the end of the word.
 
-
 ### Generation of prime numbers <a name="3"></a>[↩](#menu)
+
 ### Diffie–Hellman key exchange <a name="4"></a>[↩](#menu)
 ### Asymmetric encryption algorithms: <a name="5"></a>[↩](#menu)
 ###### RSA <a name="5_1"></a>[↩](#menu)
