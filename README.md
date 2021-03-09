@@ -76,3 +76,21 @@ The second are based on algorithms:</br>
 * By "resemble", we mean for example: no statistical test should be able to distinguish between a truly random sequence and a sequence produced by this algorithm.
 * The first term of the sequence is the seed of the pseudo-random generator. Providing the same seed twice in a row leads to generating the same pseudo-random numbers twice in a row.
 * This reproducibility is interesting in cryptography: it makes it possible to easily perform symmetrical encryption by masking in noise, as we have seen previously.
+
+###### LINEAR CONGRUENTIAL GENERATORS
+We present in the following some of the generators actually used, starting with the linear congruential generators (LCG, 1948):</br>
+* Their very low complexity makes them usable in the Internet of Things, even at very low resources;
+* They are however unsafe, so other generators are later introduced.
+These LCGs are defined as follows:
+``` 
+Xn+1=(a⋅Xn+c)%m
+``` 
+where `a`, `c` and `m` are the generator parameters.
+
+These generators are obviously periodic, and some parameters produce better sequences than others, in the sense that their periods are maximal. To obtain such parameters, it is necessary and sufficient that:</br>
+* `c` and `m` are coprime integers (their gcd is 1).
+* For each prime number `p` dividing `m, (a−1)` is a multiple of `p`.
+* `m` multiple of `4 ⇒(a−1)` multiple of 4.
+(valid for c≠0).
+
+###### THE XORSHIFT
