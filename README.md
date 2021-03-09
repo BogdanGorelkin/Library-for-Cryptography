@@ -19,8 +19,8 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 3. How to efficiently calculate a power 
 4. Generation of prime numbers
 5. Asymmetric encryption algorithms:
-    1. RSA </br>
-  5.2. El Gamal 
+   1. RSA </br>
+   2. El Gamal 
 
 ###  1. A Symmetrical Encryption Algorithm for the IoT<a name="1"></a>[↩](#menu)
 Suppose you want to encrypt a message you have in the form of a sequence of bits:
