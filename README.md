@@ -90,7 +90,14 @@ where `a`, `c` and `m` are the generator parameters.
 These generators are obviously periodic, and some parameters produce better sequences than others, in the sense that their periods are maximal. To obtain such parameters, it is necessary and sufficient that:</br>
 * `c` and `m` are coprime integers (their gcd is 1).
 * For each prime number `p` dividing `m, (a−1)` is a multiple of `p`.
-* `m` multiple of `4 ⇒(a−1)` multiple of 4.
+* `m` multiple of `4 ⇒(a−1)` multiple of 4.</br>
 (valid for c≠0).
 
 ###### THE XORSHIFT
+This generator has been proposed recently by Marsaglia, it has basically three integer parameters `a,b,c`. Its operation can be summarized as follows:
+</br>* We start from a 32-bit vector, which serves as a seed.
+* To calculate the new term from the current term `x`:
+** We replace x by the result of the or exclusive bit-by-bit between x and its version shifted a bits to the right (circular shift, the bits going out to the right go in to the left).
+** Replace x with the result of the or exclusive bit-to-bit between x and its version shifted b bits to the left (circular shift).
+** We replace x by the result of the or exclusive bit-to-bit between x and its version shifted c bits to the right (circular shift).
+* The value obtained after these three operations is the new term of the sequence, to be output.
