@@ -14,13 +14,13 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 
 ###  The different stages of the constitution of the library:
 
-1. <sup id="a1">A first symmetrical encryption algorithm(#f1)</sup>
-2. <sup id="a2">Constitution of a random generator(#f2)</sup>
-3. <sup id="a3">How to efficiently calculate a power(#f3)</sup>
-4. <sup id="a4">Generation of prime numbers(#f4)</sup>
-5. <sup id="a5">Asymmetric encryption algorithms:(#f5)</sup>
-> 5.1. <sup id="a6">RSA</br>(#f6)</sup>
-> 5.2. <sup id="a7">El Gamal(#f7)</sup>
+1. <sup id="a1">A first symmetrical encryption algorithm (#f1)</sup>
+2. <sup id="a2">Constitution of a random generator (#f2)</sup>
+3. <sup id="a3">How to efficiently calculate a power (#f3)</sup>
+4. <sup id="a4">Generation of prime numbers (#f4)</sup>
+5. <sup id="a5">Asymmetric encryption algorithms: (#f5)</sup>
+> 5.1. <sup id="a6">RSA (#f6)</sup></br>
+> 5.2. <sup id="a7">El Gamal (#f7)</sup>
 
 ###  1. <b id="f1">A Symmetrical Encryption Algorithm for the IoT</b> [↩](#a1)
 Suppose you want to encrypt a message you have in the form of a sequence of bits:
