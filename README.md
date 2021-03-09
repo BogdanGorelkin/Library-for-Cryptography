@@ -18,9 +18,10 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 2. [Constitution of a random generator](#2)
 3. [How to efficiently calculate a power](#3) 
 4. [Generation of prime numbers](#4)
-5. [Asymmetric encryption algorithms:](#5)
-   1. [RSA](#5_1) </br>
-   2. [El Gamal](#5_2) 
+5. [Diffie–Hellman key exchange](#5)
+6. [Asymmetric encryption algorithms:](#6)
+   1. [RSA](#6_1) </br>
+   2. [El Gamal](#6_2) 
 
 ###  1. A Symmetrical Encryption Algorithm for the IoT<a name="1"></a>[↩](#menu)
 Suppose you want to encrypt a message you have in the form of a sequence of bits:
@@ -135,7 +136,7 @@ More precisely...
     * otherwise, multiply by **X**.
 * Start again with the following letters, until the end of the word.
 
-### Generation of prime numbers <a name="3"></a>[↩](#menu)
+### Generation of prime numbers <a name="4"></a>[↩](#menu)
 ###### ERATOSTHENES' SIEVE
 To obtain a list of prime numbers below **N**, one can proceed as follows:
 * Create the list of integers from **2** to **N**,
@@ -152,10 +153,10 @@ To obtain a large prime number, the idea is to draw a large number of digits, co
 The problem with Fermat's theorem is that the implication is in the wrong direction: one would want something of the form "if such and such a property, then the number is prime", as for example in Wilson's theorem. However :
 * It is difficult to be more efficient than Fermat.
 * If the reciprocal is false in general, it is concretely very often true, and can be used as the basis of a probabilistic method of primality testing: something that, when it says that the number is not prime, is never wrong (a proven meaning of Fermat's theorem), and when it says that the number is prime, has a very small risk of being wrong.
-### Diffie–Hellman key exchange <a name="4"></a>[↩](#menu)
+### Diffie–Hellman key exchange <a name="5"></a>[↩](#menu)
 Read more about Diffie–Hellman key exchange [here](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
 ### Asymmetric encryption algorithms: <a name="5"></a>[↩](#menu)
-###### RSA <a name="5_1"></a>[↩](#menu)
+###### RSA <a name="6_1"></a>[↩](#menu)
 Read more about RSA encryption [here](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
-###### El Gamal <a name="5_2"></a>[↩](#menu)
+###### El Gamal <a name="6_2"></a>[↩](#menu)
 Read more about El Gamal encryption [here](https://en.wikipedia.org/wiki/ElGamal_encryption)
