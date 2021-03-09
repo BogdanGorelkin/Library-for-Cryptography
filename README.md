@@ -8,7 +8,7 @@ authors:
 supervisor:
   * [Christophe Guyeux](https://www.femto-st.fr/fr/personnel-femto/cguyeux) <guyeux@gmail.com>
 
-project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
+project relaized on [MicroPython pyBoard](https://store.micropython.org/product/PYBv1.1H)
 
 ---
 <a name="menu"></a>
