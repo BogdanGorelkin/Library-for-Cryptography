@@ -14,8 +14,8 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 
 ###  The different stages of the constitution of the library:
 
-1. [A first symmetrical encryption algorithm](1)
-2. [Constitution of a random generator](2)
+1. [A first symmetrical encryption algorithm](#1)
+2. [Constitution of a random generator](#2)
 3. How to efficiently calculate a power 
 4. Generation of prime numbers
 5. Asymmetric encryption algorithms:
