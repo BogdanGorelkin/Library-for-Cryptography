@@ -153,6 +153,7 @@ The problem with Fermat's theorem is that the implication is in the wrong direct
 * It is difficult to be more efficient than Fermat.
 * If the reciprocal is false in general, it is concretely very often true, and can be used as the basis of a probabilistic method of primality testing: something that, when it says that the number is not prime, is never wrong (a proven meaning of Fermat's theorem), and when it says that the number is prime, has a very small risk of being wrong.
 ### Diffie–Hellman key exchange <a name="4"></a>[↩](#menu)
+Read more about Diffie–Hellman key exchange [here](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
 ### Asymmetric encryption algorithms: <a name="5"></a>[↩](#menu)
 ###### RSA <a name="5_1"></a>[↩](#menu)
 Read more about RSA encryption [here](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
