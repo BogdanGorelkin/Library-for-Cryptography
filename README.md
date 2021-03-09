@@ -13,7 +13,7 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 ---
 
 ###  The different stages of the constitution of the library:
-
+<a name="menu"></a>
 1. [A first symmetrical encryption algorithm](#1)
 2. [Constitution of a random generator](#2)
 3. How to efficiently calculate a power 
@@ -22,7 +22,7 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 > 5.1. RSA 
 > 5.2. El Gamal 
 
-###  1. A Symmetrical Encryption Algorithm for the IoT<a name="1"></a>
+###  1. A Symmetrical Encryption Algorithm for the IoT<a name="1"></a>[↩](#menu)
 Suppose you want to encrypt a message you have in the form of a sequence of bits:
 
 ```0010010100011110011111110```
