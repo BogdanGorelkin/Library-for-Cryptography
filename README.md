@@ -14,15 +14,15 @@ project relaized on [pyBoard](https://store.micropython.org/product/PYBv1.1H)
 
 ###  The different stages of the constitution of the library:
 
-1. A first symmetrical encryption algorithm
-2. Constitution of a random generator
+1. [A first symmetrical encryption algorithm](1)
+2. [Constitution of a random generator](2)
 3. How to efficiently calculate a power 
 4. Generation of prime numbers
 5. Asymmetric encryption algorithms:
-> 5.1. RSA
+> 5.1. RSA 
 > 5.2. El Gamal 
 
-###  1. A Symmetrical Encryption Algorithm for the IoT
+###  1. A Symmetrical Encryption Algorithm for the IoT<a name="1"></a>
 Suppose you want to encrypt a message you have in the form of a sequence of bits:
 
 ```0010010100011110011111110```
@@ -59,7 +59,7 @@ It performs the same operation: bit by bit exclusive OR between the cryptogram a
 
 We fall back, as we can see, on the original message. In fact, as this is the modulo 2 addition, and that we added twice our sequence of noise bits, we added either 0 or 2, the whole modulo 2: so we obviously go back to the original sequence.
 
-### 2. Constitution of Random Generators
+### 2. Constitution of Random Generators<a name="2"></a>
 Random and pseudo-random number generators are one of the foundations of computer security.
 
 The first ones are based on hardware:</br>
